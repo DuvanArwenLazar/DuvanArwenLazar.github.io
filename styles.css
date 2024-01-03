@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+/* -- Navbar. */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --whitepage: #F1EFEF;
+    --blackpage: #191717;
+    --graypage: #7D7C7C;
+    --alternative: #8F43EE;
+}
+
+.navbar {
+    min-height: 65px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blackpage);
+    color: var(--whitepage);
+}
+
+.sub {
+    border-bottom: 2px solid transparent;
+    padding: 4px;
+    transition: .2s all ease-out;
+}
+
+.sub:hover { border-bottom: 2px solid white; }
+.another { 
+    font-family: 'Kalam', cursive;
+    margin-bottom: -10px; 
+}
+
+.banner {
+    min-height: 90vh;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text { margin-left: 5%; }
+
+.image {
+    max-width: 30%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.close {
+    background-color: var(--blackpage);
+    color: var(--whitepage);
+    display: inline;
+}
+
+a { 
+    color: var(--whitepage); 
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:visited {
+    color: var(--whitepage);
+    text-decoration: none;
+}
+
+/* -- Academic training. */
+.academic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.aca {
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    min-height: 300px;
+}
+
+.aca-container-image {
+    max-width: 150px;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.aca-container-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.degree-info {
+    margin-top: 15px;
+}
+
+h2.big-text-aca {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.experience, .toolbox {
+    margin-top: 55px;
+}
+
+/* -- Toolbox */
+.images {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+
+.img-content {
+    width: 50px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.img-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* -- Footer. */
+.instagram-logo, .in-logo { width: 35px; }
+.footer {
+    background-color: var(--blackpage);
+    color: white;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer h2 { font-size: 52px; }
+.network {
+    margin-top: 35px;
+    display: flex;
+    gap: 25px;
+}
