@@ -80,6 +80,7 @@ a:visited {
 }
 
 /* -- Academic training. */
+
 .academic {
     display: flex;
     justify-content: center;
@@ -123,11 +124,14 @@ h2.big-text-aca {
 }
 
 /* -- Toolbox */
+
 .images {
     display: flex;
     flex-direction: row; 
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 55px;
 }
 
 .img-content {
@@ -143,6 +147,7 @@ h2.big-text-aca {
 }
 
 /* -- Footer. */
+
 .instagram-logo, .in-logo { width: 35px; }
 .footer {
     background-color: var(--blackpage);
