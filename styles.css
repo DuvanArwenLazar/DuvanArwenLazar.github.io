@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
-/* -- Navbar. */
-
 * {
     padding: 0;
     margin: 0;
@@ -14,13 +12,16 @@
     --blackpage: #191717;
 }
 
+.navbar, .banner, .academic, .experience-container, .aca, .exp, .images, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar {
     min-height: 65px;
-    display: flex;
     flex-direction: row;
     gap: 24px;
-    align-items: center;
-    justify-content: center;
     background-color: var(--blackpage);
     color: var(--whitepage);
 }
@@ -39,13 +40,9 @@
 .banner {
     min-height: 90vh;
     font-size: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .text { margin-left: 5%; }
-
 .image {
     max-width: 30%;
     margin: 0 auto;
@@ -69,27 +66,14 @@ a {
     text-decoration: none;
 }
 
-a:hover,
-a:active,
-a:visited {
+a:hover, a:active, a:visited {
     color: var(--whitepage);
     text-decoration: none;
-}
-
-/* -- Academic training. */
-
-.academic, .experience-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .aca, .exp {
     width: 100%;
     border-radius: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     min-height: 300px;
@@ -107,27 +91,16 @@ a:visited {
     border-radius: 50%;
 }
 
-.degree-info, .job-info {
-    margin-top: 15px;
-}
-
+.degree-info, .job-info { margin-top: 15px; }
 h2.big-text-aca {
     text-align: center;
     margin-bottom: 55px;
 }
 
-.experience, .toolbox {
-    margin-top: 55px;
-}
-
-/* -- Toolbox */
-
+.experience, .toolbox { margin-top: 55px; }
 .images {
-    display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .img-content {
@@ -142,16 +115,11 @@ h2.big-text-aca {
     height: auto;
 }
 
-/* -- Footer. */
-
 .instagram-logo, .in-logo { width: 35px; }
 .footer {
     background-color: var(--blackpage);
     color: white;
     height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin-top: 55px;
 }
@@ -195,7 +163,6 @@ h2.big-text-aca {
 @media only screen and (max-width: 815px) {
     .image { max-width: 210px; }
     .text { font-size: 35px; }
-
     .aca, .exp {
         min-height: 400px;
     }
@@ -213,7 +180,6 @@ h2.big-text-aca {
     }
 
     .experience-container, .academic { font-size: 14px; }
-
 }
 
 @media only screen and (max-width: 715px) {
@@ -227,7 +193,6 @@ h2.big-text-aca {
 @media only screen and (max-width: 625px) {
     .image { max-width: 160px; }
     .text { font-size: 25px; }
-
     .academic {
         flex-direction: column;
         margin: 15px;
