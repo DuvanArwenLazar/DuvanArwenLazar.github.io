@@ -81,14 +81,14 @@ a:visited {
 
 /* -- Academic training. */
 
-.academic {
+.academic, .experience-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
 }
 
-.aca {
+.aca, .exp {
     border-radius: 24px;
     display: flex;
     align-items: center;
