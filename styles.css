@@ -153,6 +153,7 @@ h2.big-text-aca {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 55px;
 }
 
 .footer h2 { font-size: 52px; }
