@@ -131,7 +131,6 @@ h2.big-text-aca {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 55px;
 }
 
 .img-content {
@@ -164,4 +163,62 @@ h2.big-text-aca {
     margin-top: 35px;
     display: flex;
     gap: 25px;
+}
+
+/* -- Responsive Design */
+@media only screen and (max-width: 1260px) {
+    .image { max-width: 350px; }
+}
+
+@media only screen and (max-width: 1100px) {
+    .image { max-width: 325px; }
+}
+
+@media only screen and (max-width: 1024px) {
+    .image { max-width: 325px; }
+}
+
+@media only screen and (max-width: 980px) {
+    .image { max-width: 250px; }
+    .text { font-size: 40px; }
+}
+
+@media only screen and (max-width: 815px) {
+    .image { max-width: 210px; }
+    .text { font-size: 35px; }
+}
+
+@media only screen and (max-width: 715px) {
+    .image { max-width: 190px; }
+    .text { font-size: 30px; }
+}
+
+@media only screen and (max-width: 625px) {
+    .image { max-width: 160px; }
+    .text { font-size: 25px; }
+}
+
+@media only screen and (max-width: 525px) {
+    .image { max-width: 140px; }
+    .text { font-size: 22px; }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar { font-size: 14px; }
+}
+
+@media only screen and (max-width: 477px) {
+    .banner { flex-direction: column; }
+    .text { font-size: 32px; }
+    .image {
+        margin: 35px 0;
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px 0;
+    }
 }
