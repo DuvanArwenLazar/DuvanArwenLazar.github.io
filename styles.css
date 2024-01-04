@@ -12,8 +12,6 @@
 :root {
     --whitepage: #F1EFEF;
     --blackpage: #191717;
-    --graypage: #7D7C7C;
-    --alternative: #8F43EE;
 }
 
 .navbar {
@@ -29,7 +27,6 @@
 
 .sub {
     border-bottom: 2px solid transparent;
-    padding: 4px;
     transition: .2s all ease-out;
 }
 
@@ -85,32 +82,32 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
 }
 
 .aca, .exp {
+    width: 100%;
     border-radius: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 35px;
+    margin: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     min-height: 300px;
 }
 
-.aca-container-image {
+.aca-container-image, .job-container-image {
     max-width: 150px;
     overflow: hidden;
     margin: 30px;
 }
 
-.aca-container-image img {
+.aca-container-image img, .job-container-image img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
 }
 
-.degree-info {
+.degree-info, .job-info {
     margin-top: 15px;
 }
 
@@ -166,16 +163,27 @@ h2.big-text-aca {
 }
 
 /* -- Responsive Design */
+
 @media only screen and (max-width: 1260px) {
     .image { max-width: 350px; }
 }
 
 @media only screen and (max-width: 1100px) {
     .image { max-width: 325px; }
+    .aca {
+        width: 100%;
+        flex-direction: column;
+        min-height: 500px;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
     .image { max-width: 325px; }
+    .exp {
+        width: 100%;
+        flex-direction: column;
+        min-height: 500px;
+    }
 }
 
 @media only screen and (max-width: 980px) {
@@ -186,16 +194,54 @@ h2.big-text-aca {
 @media only screen and (max-width: 815px) {
     .image { max-width: 210px; }
     .text { font-size: 35px; }
+
+    .aca, .exp {
+        min-height: 400px;
+    }
+
+    .aca-container-image, .job-container-image {
+        max-width: 100px;
+        overflow: hidden;
+        margin: 30px;
+    }
+    
+    .aca-container-image img, .job-container-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .experience-container, .academic { font-size: 14px; }
+
 }
 
 @media only screen and (max-width: 715px) {
     .image { max-width: 190px; }
     .text { font-size: 30px; }
+
+    .aca-container-image, .job-container-image { max-width: 90px; }
+    .experience-container, .academic { font-size: 11px; }
 }
 
 @media only screen and (max-width: 625px) {
     .image { max-width: 160px; }
     .text { font-size: 25px; }
+
+    .academic {
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .aca-container-image { max-width: 120px; }
+    .academic { font-size: 18px; }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar { font-size: 14px; }
+    .job-info { display: none; }
+
+    .job-container-image { max-width: 120px; }
+    .experience-container { font-size: 18px; }
 }
 
 @media only screen and (max-width: 525px) {
@@ -203,9 +249,6 @@ h2.big-text-aca {
     .text { font-size: 22px; }
 }
 
-@media only screen and (max-width: 600px) {
-    .navbar { font-size: 14px; }
-}
 
 @media only screen and (max-width: 477px) {
     .banner { flex-direction: column; }
@@ -221,4 +264,19 @@ h2.big-text-aca {
         flex-direction: column;
         padding: 20px 0;
     }
+
+    .text { font-size: 28px; }
+}
+
+@media only screen and (max-width: 395px) {
+    .text { font-size: 24px; }
+}
+
+@media only screen and (max-width: 375px) {
+    .aca-container-image, .job-container-image { max-width: 100px; }
+    .academic, .experience-container { font-size: 14px; }
+}
+
+@media only screen and (max-width: 335px) {
+    .text { font-size: 22px; }
 }
