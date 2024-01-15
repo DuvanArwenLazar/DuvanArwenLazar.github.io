@@ -12,6 +12,6 @@ ScrollReveal().reveal('.footer', { delay: 800 });
 const elements = document.getElementsByClassName("iterator");
 for (let index = 0; index < elements.length; index++) {
     const element = elements[index];
-    console.log(element);
     ScrollReveal().reveal(element, { delay: 100 + (index * 250) / 2 });
 }
+
