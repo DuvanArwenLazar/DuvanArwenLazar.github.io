@@ -213,6 +213,10 @@ h2.big-text-aca {
 @media only screen and (max-width: 525px) {
     .image { max-width: 140px; }
     .text { font-size: 22px; }
+    .navbar {
+        flex-direction: column;
+        padding: 20px 0;
+    }
 }
 
 
@@ -226,11 +230,6 @@ h2.big-text-aca {
 }
 
 @media only screen and (max-width: 425px) {
-    .navbar {
-        flex-direction: column;
-        padding: 20px 0;
-    }
-
     .text { font-size: 28px; }
 }
 
