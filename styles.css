@@ -92,9 +92,9 @@ a:hover, a:active, a:visited {
 }
 
 .degree-info, .job-info { margin-top: 15px; }
-h1.big-text-aca {
-    margin: 100px 0 55px 65px;
-    font-size: 45px;
+h2.big-text-aca {
+    text-align: center;
+    margin-bottom: 55px;
 }
 
 .section-one {
